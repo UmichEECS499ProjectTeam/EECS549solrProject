@@ -1,0 +1,550 @@
+INFO  - 2014-04-14 23:55:00.793; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2014-04-14 23:55:00.841; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/contexts at interval 0
+INFO  - 2014-04-14 23:55:00.856; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/contexts/solr-jetty-context.xml
+INFO  - 2014-04-14 23:55:01.036; org.eclipse.jetty.webapp.WebInfConfiguration; Extract jar:file:/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/webapps/solr.war!/ to /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr-webapp/webapp
+INFO  - 2014-04-14 23:55:04.600; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2014-04-14 23:55:04.797; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2014-04-14 23:55:04.837; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2014-04-14 23:55:04.837; org.apache.solr.core.SolrResourceLoader; solr home defaulted to 'solr/' (could not find system property or JNDI)
+INFO  - 2014-04-14 23:55:04.838; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/'
+INFO  - 2014-04-14 23:55:05.168; org.apache.solr.core.ConfigSolr; Loading container configuration from /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/solr.xml
+INFO  - 2014-04-14 23:55:05.192; org.apache.solr.core.ConfigSolr; /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/solr.xml does not exist, using default configuration
+INFO  - 2014-04-14 23:55:05.515; org.apache.solr.core.CoreContainer; New CoreContainer 16189702
+INFO  - 2014-04-14 23:55:05.516; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=solr/]
+INFO  - 2014-04-14 23:55:05.531; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2014-04-14 23:55:05.531; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2014-04-14 23:55:05.532; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2014-04-14 23:55:05.535; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2014-04-14 23:55:05.536; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2014-04-14 23:55:05.536; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2014-04-14 23:55:05.536; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2014-04-14 23:55:05.537; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2014-04-14 23:55:05.537; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2014-04-14 23:55:06.016; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2014-04-14 23:55:06.030; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2014-04-14 23:55:06.031; org.apache.solr.core.CoreContainer; Host Name: 
+INFO  - 2014-04-14 23:55:06.126; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using instanceDir: solr/collection1
+INFO  - 2014-04-14 23:55:06.127; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/collection1/'
+ERROR - 2014-04-14 23:55:06.222; org.apache.solr.core.CoreContainer; Failed to load file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+ERROR - 2014-04-14 23:55:06.224; org.apache.solr.core.CoreContainer; Unable to create core: collection1
+org.apache.solr.common.SolrException: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:530)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:258)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:250)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.io.IOException: Can't find resource 'solrconfig.xml' in classpath or '/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/conf'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:342)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:288)
+	at org.apache.solr.core.Config.<init>(Config.java:116)
+	at org.apache.solr.core.Config.<init>(Config.java:86)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:140)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:527)
+	... 9 more
+ERROR - 2014-04-14 23:55:06.235; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: Unable to create core: collection1
+	at org.apache.solr.core.CoreContainer.recordAndThrow(CoreContainer.java:989)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:606)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:258)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:250)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.apache.solr.common.SolrException: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:530)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:597)
+	... 8 more
+Caused by: java.io.IOException: Can't find resource 'solrconfig.xml' in classpath or '/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/conf'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:342)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:288)
+	at org.apache.solr.core.Config.<init>(Config.java:116)
+	at org.apache.solr.core.Config.<init>(Config.java:86)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:140)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:527)
+	... 9 more
+
+INFO  - 2014-04-14 23:55:06.246; org.apache.solr.servlet.SolrDispatchFilter; user.dir=/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs
+INFO  - 2014-04-14 23:55:06.247; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2014-04-14 23:55:06.319; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
+INFO  - 2014-04-14 23:55:07.642; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1397519687018&wt=json} status=0 QTime=43 
+ERROR - 2014-04-14 23:55:07.753; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: SolrCore 'collection1' is not available due to init failure: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:827)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:317)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:217)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.apache.solr.common.SolrException: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:530)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:258)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:250)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	... 1 more
+Caused by: java.io.IOException: Can't find resource 'solrconfig.xml' in classpath or '/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/conf'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:342)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:288)
+	at org.apache.solr.core.Config.<init>(Config.java:116)
+	at org.apache.solr.core.Config.<init>(Config.java:86)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:140)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:527)
+	... 9 more
+
+ERROR - 2014-04-14 23:55:31.066; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: SolrCore 'collection1' is not available due to init failure: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:827)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:317)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:217)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.apache.solr.common.SolrException: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:530)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:258)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:250)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	... 1 more
+Caused by: java.io.IOException: Can't find resource 'solrconfig.xml' in classpath or '/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/conf'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:342)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:288)
+	at org.apache.solr.core.Config.<init>(Config.java:116)
+	at org.apache.solr.core.Config.<init>(Config.java:86)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:140)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:527)
+	... 9 more
+
+ERROR - 2014-04-14 23:55:37.923; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: SolrCore 'collection1' is not available due to init failure: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:827)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:317)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:217)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.apache.solr.common.SolrException: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:530)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:258)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:250)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	... 1 more
+Caused by: java.io.IOException: Can't find resource 'solrconfig.xml' in classpath or '/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/conf'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:342)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:288)
+	at org.apache.solr.core.Config.<init>(Config.java:116)
+	at org.apache.solr.core.Config.<init>(Config.java:86)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:140)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:527)
+	... 9 more
+
+ERROR - 2014-04-14 23:55:38.107; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: SolrCore 'collection1' is not available due to init failure: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:827)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:317)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:217)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.apache.solr.common.SolrException: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:530)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:258)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:250)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	... 1 more
+Caused by: java.io.IOException: Can't find resource 'solrconfig.xml' in classpath or '/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/conf'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:342)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:288)
+	at org.apache.solr.core.Config.<init>(Config.java:116)
+	at org.apache.solr.core.Config.<init>(Config.java:86)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:140)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:527)
+	... 9 more
+
+ERROR - 2014-04-14 23:55:57.770; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: SolrCore 'collection1' is not available due to init failure: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:827)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:317)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:217)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.apache.solr.common.SolrException: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:530)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:258)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:250)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	... 1 more
+Caused by: java.io.IOException: Can't find resource 'solrconfig.xml' in classpath or '/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/conf'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:342)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:288)
+	at org.apache.solr.core.Config.<init>(Config.java:116)
+	at org.apache.solr.core.Config.<init>(Config.java:86)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:140)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:527)
+	... 9 more
+
+INFO  - 2014-04-14 23:57:41.007; org.eclipse.jetty.server.Server; Graceful shutdown SocketConnector@0.0.0.0:8983
+INFO  - 2014-04-14 23:57:41.015; org.eclipse.jetty.server.Server; Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr-webapp/webapp/},/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/webapps/solr.war
+INFO  - 2014-04-14 23:57:42.016; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=16189702
+INFO  - 2014-04-14 23:57:42.019; org.eclipse.jetty.server.handler.ContextHandler; stopped o.e.j.w.WebAppContext{/solr,file:/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr-webapp/webapp/},/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/webapps/solr.war
+INFO  - 2014-04-14 23:57:49.232; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2014-04-14 23:57:49.275; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/contexts at interval 0
+INFO  - 2014-04-14 23:57:49.290; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/contexts/solr-jetty-context.xml
+INFO  - 2014-04-14 23:57:51.741; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2014-04-14 23:57:51.935; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2014-04-14 23:57:51.970; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2014-04-14 23:57:51.970; org.apache.solr.core.SolrResourceLoader; solr home defaulted to 'solr/' (could not find system property or JNDI)
+INFO  - 2014-04-14 23:57:51.971; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/'
+INFO  - 2014-04-14 23:57:52.320; org.apache.solr.core.ConfigSolr; Loading container configuration from /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/solr.xml
+INFO  - 2014-04-14 23:57:52.342; org.apache.solr.core.ConfigSolr; /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/solr.xml does not exist, using default configuration
+INFO  - 2014-04-14 23:57:52.688; org.apache.solr.core.CoreContainer; New CoreContainer 1632732398
+INFO  - 2014-04-14 23:57:52.689; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=solr/]
+INFO  - 2014-04-14 23:57:52.704; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2014-04-14 23:57:52.705; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2014-04-14 23:57:52.705; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2014-04-14 23:57:52.705; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2014-04-14 23:57:52.709; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2014-04-14 23:57:52.709; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2014-04-14 23:57:52.710; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2014-04-14 23:57:52.710; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2014-04-14 23:57:52.710; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2014-04-14 23:57:53.189; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2014-04-14 23:57:53.202; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2014-04-14 23:57:53.210; org.apache.solr.core.CoreContainer; Host Name: 
+INFO  - 2014-04-14 23:57:53.296; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using instanceDir: solr/collection1
+INFO  - 2014-04-14 23:57:53.297; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/collection1/'
+ERROR - 2014-04-14 23:57:53.326; org.apache.solr.core.CoreContainer; Failed to load file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+ERROR - 2014-04-14 23:57:53.328; org.apache.solr.core.CoreContainer; Unable to create core: collection1
+org.apache.solr.common.SolrException: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:530)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:258)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:250)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.io.IOException: Can't find resource 'solrconfig.xml' in classpath or '/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/conf'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:342)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:288)
+	at org.apache.solr.core.Config.<init>(Config.java:116)
+	at org.apache.solr.core.Config.<init>(Config.java:86)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:140)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:527)
+	... 9 more
+ERROR - 2014-04-14 23:57:53.339; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: Unable to create core: collection1
+	at org.apache.solr.core.CoreContainer.recordAndThrow(CoreContainer.java:989)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:606)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:258)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:250)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.apache.solr.common.SolrException: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:530)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:597)
+	... 8 more
+Caused by: java.io.IOException: Can't find resource 'solrconfig.xml' in classpath or '/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/conf'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:342)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:288)
+	at org.apache.solr.core.Config.<init>(Config.java:116)
+	at org.apache.solr.core.Config.<init>(Config.java:86)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:140)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:527)
+	... 9 more
+
+INFO  - 2014-04-14 23:57:53.341; org.apache.solr.servlet.SolrDispatchFilter; user.dir=/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs
+INFO  - 2014-04-14 23:57:53.342; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2014-04-14 23:57:53.480; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
+ERROR - 2014-04-14 23:58:10.011; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: SolrCore 'collection1' is not available due to init failure: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:827)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:317)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:217)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.apache.solr.common.SolrException: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:530)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:258)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:250)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	... 1 more
+Caused by: java.io.IOException: Can't find resource 'solrconfig.xml' in classpath or '/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/conf'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:342)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:288)
+	at org.apache.solr.core.Config.<init>(Config.java:116)
+	at org.apache.solr.core.Config.<init>(Config.java:86)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:140)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:527)
+	... 9 more
+
+ERROR - 2014-04-14 23:58:12.452; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: SolrCore 'collection1' is not available due to init failure: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:827)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:317)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:217)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.apache.solr.common.SolrException: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:530)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:258)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:250)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	... 1 more
+Caused by: java.io.IOException: Can't find resource 'solrconfig.xml' in classpath or '/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/conf'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:342)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:288)
+	at org.apache.solr.core.Config.<init>(Config.java:116)
+	at org.apache.solr.core.Config.<init>(Config.java:86)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:140)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:527)
+	... 9 more
+
+ERROR - 2014-04-14 23:58:12.564; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: SolrCore 'collection1' is not available due to init failure: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:827)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:317)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:217)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.apache.solr.common.SolrException: Could not load config file /home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/solrconfig.xml
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:530)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:258)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:250)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	... 1 more
+Caused by: java.io.IOException: Can't find resource 'solrconfig.xml' in classpath or '/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr/collection1/conf'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:342)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:288)
+	at org.apache.solr.core.Config.<init>(Config.java:116)
+	at org.apache.solr.core.Config.<init>(Config.java:86)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:140)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:527)
+	... 9 more
+
+INFO  - 2014-04-14 23:59:51.431; org.eclipse.jetty.server.Server; Graceful shutdown SocketConnector@0.0.0.0:8983
+INFO  - 2014-04-14 23:59:51.439; org.eclipse.jetty.server.Server; Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr-webapp/webapp/},/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/webapps/solr.war
+INFO  - 2014-04-14 23:59:52.440; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=1632732398
+INFO  - 2014-04-14 23:59:52.443; org.eclipse.jetty.server.handler.ContextHandler; stopped o.e.j.w.WebAppContext{/solr,file:/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/exampledocs/solr-webapp/webapp/},/home/ubuntu/EECS549ProjectSolr/solr-4.7.1/example/webapps/solr.war

@@ -1,0 +1,343 @@
+1v1, A custom game between two players
+3s, Twisted Treeline 
+5s, Summoners Rift 
+AA, Auto attack
+AAS, Archangels Staff
+ABAM, All Blind All Mid
+AD, Attack Damage
+ADAM, All Draft All Mid
+ADC, Attack Damage Carry
+AFK, Away From Keyboard
+Aggro, The targeting priority  of an A.I, controlled minion turret monster etc
+Ali, Alistar
+AniAniv, Anivia
+AoE, AoEArea of Effect
+AP, Ability Power
+ARAB, Crystal ScarAll Random All Bottom
+ARAM, All Random All Mid
+ARAP, Proving GroundsAll Random All Proving Grounds
+ArPArPen, Armor Penetration
+ASATSASPD, Attack Speed
+Atmallet, Can also be referred to as #FFratmas
+Atmogs, Can also be referred to as #WWarmas
+Aura platformAura bot
+Auto attackAuto-attackAutoattack
+B, Back, Recall
+Banana, SorakaSorakas autoattack
+Baron, Baron Nashor, Exalted with Baron Nashor
+Bear, Volibear, Summon TibbersAnnie
+BC, The Black Cleaver
+BFBFS, B.F.Sword
+BG, Bad Game
+Bird, Anivia
+Blind pick
+Blitz, Blitzcrank
+Blue, Blue Buff, Blue Team, Glyphs a type of rune
+BoRK, Blade of the Ruined King
+Bot, Bottom lane, The Quarry/Boneyard capture points in Dominion, An A.I, controlled champion
+Bot game, Co-op vs, AI
+BP, Blue Pill  which was replaced by Recall, Sometimes used in place of "B"
+BRB, Be right back
+Bruce, Lee Sin
+Bruiser, See #Fighterfighter
+BrushBrush,Bush, The tall grass in which champions can hide
+BT, The Bloodthirster
+BuffBuff, A positive effect applied to a champion
+Burst, Nuke is also a commonly used term
+BV, Banshees Veil
+Cait, Caitlyn
+Cap, Rabadons Deathcap, To capture a point in Dominion, A limit past which something can not rise 
+CassCasio, Cassiopeia
+Cat, Nidalee, Rengar
+CC, Crowd control
+CD, Cooldown
+CDR, Cooldown reduction
+Chain CC
+Char, Short for "character" used to mean champion
+Cho, ChoGath
+Clutch move
+Co-op, Co-op vs, AI
+Commit, To not retreat
+Counter gank
+Counter jungle
+Counter pick
+Cow, Alistar
+Creeps, MonsterMonsters and minionminions
+CS, Chrono ShiftZilean
+Custom, Custom game
+Cup, Chalice of HarmonyAthenes Unholy Grail
+Cupcake, Yordle Snap TrapCaitlyn, Caitlyn; thus coined by Vi
+CV, Clairvoyance
+Dar, Darius
+DDef, Defend
+DFG, Deathfire Grasp
+DC, Disconnected
+DD, Direct damage, Double damage
+Di, Diana
+DodgeDodge, #QQueue dodge
+Dog, Nasus
+Donger, Heimerdinger
+DoT, Damage over Time effect
+DotA, Defense of the Ancients
+Double kill
+DPS, Damage per second 
+Draft, Draft Pick
+DragDrake, Dragon
+EC, Executioners Calling
+Effective health
+Egg, RebirthAnivia
+Elo rating systemElo
+Elo rating system#Elo hellElo hell
+Eve, Evelynn
+Executed, Otherwise being slain by Noxian GuillotineDarius
+Exp, Shorthand for experience points
+Ez, Ezreal, Easy
+Face check, This can be a very risky action
+Fail flash
+FB, First Blood
+FeedFeed, A player who does this is a feeder
+FFS, For fucks sake, An expression of anger or frustration
+FidFiddleFS, Fiddlesticks
+Field of JusticeField of Justice, Also referred to as a map
+Champion attributesFighter, They were formerly called Bruisers
+Fish, Fizz
+FM, Frozen Mallet
+Fratmas, Can also be referred to as #AAtmallet
+FogFoWFog of Warlink3=Fog of War
+FoN, Force of Nature
+Forced teamfight
+FotM, Flavor of the Month
+Fourchan/4Chan, Named after the infamous image board
+FPS, Frames per second
+Franky, Vi
+FWotD, First Win of the day
+GA, Guardian Angel
+Game throw
+GangGP, Gangplank
+Gap closer
+GG, Good game
+GJ, Good Job
+GL, Good Luck
+GLHF, Good Luck; Have Fun
+Glass cannon
+Global, An ability that can strike anywhere on the map 
+Gold, The in-game currency used to buy items
+Golden Pose, Zhonyas HourglassZhonyas Hourglasss active
+Gold per 10GP10
+Grag, Gragas
+Hard CC
+Hard leash
+Hat, Rabadons Deathcap, Also known to some as "Funny hat" or "Funky hat"
+Heal bot, Soraka
+HecHeca, Hecarim
+HeimHeimer, Heimerdinger
+HF, Have Fun
+Horse, Hecarim
+Hourglass, Zhonyas Hourglass
+healthHP, Health also known as "Hit Points"
+Health regenerationHP5, Health Regeneration per 5 seconds
+IE, Infinity Edge
+IBG, Iceborn Gauntlet
+Imba, Imbalanced
+Inhib, Inhibitor
+Inhibitor turret, The tower protecting the inhibitor
+Inner turrets
+InstagibInstakill, Instant giblets or Instant kill
+InstalockInstalocking, Instant lock
+IP, Influence Points
+IreIrie, Irelia
+J4JarJarv, Jarvan IV
+JackJitB, Jack In The BoxShaco
+Jay, Jayce
+JoJ, The Journal of Justice
+Juke, The act of dodging skill shots
+Jungler Jungler champion
+Jungling Jungling, To kill monsters in the jungle
+KarKarth, Karthus
+Kass, Kassadin
+KatKata, Katarina
+Kay, Kayle
+Ken, Kennen
+KhaKhazK6, KhaZix
+Kill lane
+Killing spree
+Kit, A champions set of champion abilityabilities
+Kiter, A champion that is particularly good at kiting 
+Crowd Control/Movement modifierKnockback
+Crowd Control/Action modifierKnockup
+Kog, KogMaw
+KS, Kill Steal, Kill Secured, Kill#The amount of goldKill Streak
+Lag Spike
+LaneLane, The paths that allied and enemy minions follow
+Laning phase
+Lantern, Dark PassageThresh
+Laser, Final SparkLux, The Nexus Obelisks autoattack
+Last hit
+LB, LeBlanc
+LeaveLeaver, This is regulated by the Leaver Buster system
+Lee, Lee Sin
+LS, Lee Sin, Life steal
+Leo, Leona
+Liss, Lissandra
+LOL, League of Legends the title of the game itself, Laughing out loud
+LW, Last Whisper
+Main, A players best or favorite champion to use
+Mana BatteryMana Dispenser, Soraka
+ManalessManaless, Champions who do not have the mana stat
+MalpMalph, Malphite
+Malz, Malzahar, Udyr
+Man drop, Pantheons Grand SkyfallPantheon
+Mao, Maokai
+Map awareness
+Map control
+Map objective
+Mermaid, Nami
+MF, Miss Fortune
+MIA, Missing In Action
+Mid, Middle lane, The Refinery/Drill capture points in Dominion
+Mid top
+Mid turrets, The three towers just outside the base
+Minion wave
+Miss, Enemy champion missing in action
+MK, Minion Kills
+MM, Marksman championMarksman
+MOBA, Multiplayer Online Battle Arena
+Monkey, Wukong
+Morde, Mordekaiser
+Morg, Morgana
+MP5MP5, Mana regeneration per 5 seconds
+MPen, Magic Penetration
+MRMRMRes, Magic Resistance
+MSMS, Movement Speed
+Mundo, Dr, Mundo
+MummyMumu, Amumu
+Murder bridge, Another name for the Howling Abyss map
+N1, Nice One
+NautNauti, Nautilus
+Nexus turrets, The two towers protecting the nexus
+NJ, Nice Job
+Noc, Nocturne
+Nid, Nidalee
+Noob, Unskillful player/unexperienced beginner, Similar forms include "nub" and "n00b", Derived from the word newbie
+Normal, Normal game
+NPC, Non-Player Character
+OC, Original champion/character
+Off tank
+OMW, On My Way
+OOM, Out Of Mana
+OP, Overpowered
+Orange, Remove ScurvyGangplank
+Ori, Orianna
+OTW, On The Way
+Outer turrets, The three towers furthest from the base
+PantPanth, Pantheon
+PD, Phantom Dancer
+PFE, EzrealPulsefire Ezreal
+Philo, Philosophers Stone
+Pink, Vision Ward
+Pony, Hecarim
+PositionPositioning, A champions location during a fight
+Pot, Potion usually Health Potion
+Proc, The activation of an effect
+Pub, Public player
+Pull, Same as leash, An ability that brings the enemy closer to you 
+Purple, Purple team
+PvP, Player versus Player
+QSS, Quicksilver Sash
+Quadra kill
+Que, Queue
+Queue dodge
+Rage, To display in-game frustration
+Raka, Soraka
+RankRanked, Ranked game
+Rat, Twitch
+Razors, Madreds Razors
+Rdy, Ready
+Red, Blessing of the Lizard Elder, Marks a type of rune
+RenRene, Renekton
+Reng, Rengar
+Req, Request, Require, RequiemKarthus
+Revolver, Hextech Revolver
+RNG, Range
+RoA, Rod of Ages
+ROFL, Rolling on the floor laughing
+RP, Riot Points
+Rylais, Rylais Crystal Scepter
+Scrim, Scrimmage
+SejSeju, Sejuani
+ShopShop, The location where items are bought, To return to the base and buy items, Interchangeable with #B"b" or #BRB"brb"
+Shroom, Noxious TrapTeemo
+Shutdown, To slay a champion that is on a killing spree
+Shyv, Shyvana
+Siv, Sivir
+Skar, Skarner
+Smart castSmart cast
+Snake, Cassiopeia
+SnareSnare, A debuff which prevents a champion from moving
+Snowball itemsSnowball item, Mejais Soulstealer
+Soft CC
+Soft leash
+Solo queue
+Sora, Soraka
+SotO, Sword of the Occult
+Space AIDS, Malefic VisionsMalzahar
+Spell, Summoner spell
+Split push
+SR, Summoners Rift
+SS, Enemy champion missing shortened form of "miss"
+Store, Riot Store
+Super, Super Minion
+Support championSupport
+SV, Spirit Visage
+Tank championTank
+Tanking, To take high amounts of damage
+Tanky DPS
+Team comp, Team composition
+TF, Twisted Fate, Trinity Force
+Toon, Another word for character
+Top, Top/upper lane, The capture point of windmill in Dominion mode
+Tower, A commonly used alternative term for the turret
+Tower divingTD
+Tower hugging
+TP, Teleport, GateTwisted Fate
+TradeTrading, Trade champions, Trade damage, Trade kills
+Tree, Maokai
+Tri-brush
+Triple kill
+TrisTristTristy, Tristana
+Troll, Trolls are also referred to as griefers
+Troll pole, PlayfulFizz
+Troll pool, Sanguine PoolVladimir
+TT, Twisted Treeline
+TrynTryndTrynda, Tryndamere
+TurretTurret, It is also commonly referred to as the Tower, H-28G Evolution TurretHeimerdinger
+UltUlti, Ultimate ability
+UP, Underpowered
+Var, Varus
+Vel, VelKoz
+Vision hack
+Veig, Veigar
+Vent, Ventrillo
+Vik, Viktor
+Vlad, Vladimir
+Voli, Volibear
+WardWard, Items that reveal the Fog of War once placed
+Ward jump
+Ward bait, To place down a ward in order to set up a gank
+Ward coverage
+Ward placement, The location in which a ward is laid down
+Warmas, Can also be referred to as #AAtmogs
+Wet Noodle Fight
+Wombo combo
+WotA, Will of the Ancients
+WotD, Win of the day
+WP, Well Played
+Wu,Wuk, Wukong
+WW, Warwick
+Xin,XZ, Xin Zhao
+Yas, Yasuo
+Yellow, Seals a type of rune
+Yi, Master Yi
+Yor, Yorick
+Zil, Zilean
+Zone,Zoning
